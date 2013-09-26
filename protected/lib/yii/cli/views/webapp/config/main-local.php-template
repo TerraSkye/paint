@@ -1,0 +1,49 @@
+<?php
+
+return array(
+	'modules' => array(
+		'gii' => array(
+			'class' => 'system.gii.GiiModule',
+			'password' => '1375c0m4n2',
+			// If removed, Gii defaults to localhost only. Edit carefully to taste.
+			'ipFilters' => array('127.0.0.1', '::1', '10.0.*'),
+			'generatorPaths' => array(
+				'common.generators',
+			),
+		),
+	),
+	'components' => array(
+		'db' => array(
+			'connectionString' => 'dblib:host=10.0.0.10;port=49310;dbname=all4students',
+			'schemaCachingDuration' => 3600,
+			'autoConnect' => true,
+			'username' => 'sa',
+			'password' => '1375sn20+=71',
+			'charset' => 'utf8',
+			'enableProfiling' => true,
+			'enableParamLogging' => true,
+		),
+		'legacyDb' => array(
+			'class' => 'CDbConnection',
+			'connectionString' => 'dblib:host=10.0.0.251:1434;dbname=master',
+			'username' => 'sa',
+			'password' => 'xs4sa',
+			'charset' => 'utf8'
+		),
+
+		'cache' => array(
+			'class' => 'system.caching.CDummyCache',
+		),
+		'log' => null
+//		'log'=>array(
+//            'class'=>'CLogRouter',
+//            'routes'=>array(
+//                array(
+//                    'class'=>'CProfileLogRoute',
+//                    'levels'=>'profile',
+//                    'enabled'=>true,
+//                ),
+//            ),
+//        ),
+	)
+);

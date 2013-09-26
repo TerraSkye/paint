@@ -1,0 +1,167 @@
+.menu-top {
+    height: 100px;
+    margin: -20px 0 0 0;
+    position: relative;
+}
+
+.menu-top>div {
+    position: absolute;
+    top: 35px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.menu-top .menu-top-logo {
+    top: 0px;
+    left: 10px;
+    height: 100px;
+    width: 218px;
+}
+
+.menu-top .menu-top-container {
+    left: 250px;
+}
+
+.menu-top .menu-top-request {
+    right: 0px;
+}
+
+.menu-top a.logo {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+    background: #fff url(img/studentenpas-logo.png) top left no-repeat;
+    zoom: 1;
+    *display: block;
+}
+
+.menu-top ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-top li {
+    float: left;
+    margin: 0 0 0 10px;
+    line-height: 30px;
+}
+
+.menu-top li a {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #303030;
+    height: 30px;
+    padding: 0 14px;
+    font-family: Arial;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+.menu-top-container li:first-child {
+    margin: 0;
+}
+
+.menu-top-container a:hover {
+    background-color: #e2e2e2;
+}
+
+.menu-top-container li.active a {
+    font-weight: bold;
+    background-color: #006cb1;
+    color: #fff;
+}
+
+.menu-top-container li.active a:hover {
+    background-color: #006cb1;
+}
+
+.header {
+    background-color: #000;
+    height: 20px;
+    margin: 10px 0px;
+    padding-left: 3px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.search-bar {
+    height: 180px;
+    margin: 0 -20px 20px -20px;
+    background: #000 url(img/header-search.png) top left no-repeat;
+}
+
+.magenta {
+    background-color: #e60092;
+    *background-color: #e60092;
+    background-image: -moz-linear-gradient(top, #ec008c, #d1047e);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ec008c), to(#d1047e));
+    background-image: -webkit-linear-gradient(top, #ec008c, #d1047e);
+    background-image: -o-linear-gradient(top, #ec008c, #d1047e);
+    background-image: linear-gradient(to bottom, #ec008c, #d1047e);
+    background-repeat: repeat-x;
+    border-color: #d1047e #d1047e #e60092;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff0088cc', endColorstr = '#ff0044cc', GradientType = 0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.magenta:hover {
+    color: #ffffff;
+    background-color: #d1047e;
+    *background-color: #d1047e;
+}
+
+.blue {
+    background-color: #005f9c;
+    *background-color: #005f9c;
+    background-image: -moz-linear-gradient(top, #0081c2, #006cb1);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#006cb1));
+    background-image: -webkit-linear-gradient(top, #0081c2, #006cb1);
+    background-image: -o-linear-gradient(top, #0081c2, #006cb1);
+    background-image: linear-gradient(to bottom, #0081c2, #006cb1);
+    background-repeat: repeat-x;
+    border-color: #006cb1 #006cb1 #005f9c;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff0088cc', endColorstr = '#ff0044cc', GradientType = 0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.blue:hover {
+    color: #ffffff;
+    background-color: #006cb1;
+    *background-color: #006cb1;
+}
+
+.orange {
+    background-color: #ea5f1c;
+    *background-color: #ea5f1c;
+    background-image: -moz-linear-gradient(top, #f26522, #e94b00);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f26522), to(#e94b00));
+    background-image: -webkit-linear-gradient(top, #f26522, #e94b00);
+    background-image: -o-linear-gradient(top, #f26522, #e94b00);
+    background-image: linear-gradient(to bottom, #f26522, #e94b00);
+    background-repeat: repeat-x;
+    border-color: #e94b00 #e94b00 #ea5f1c;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ff0088cc', endColorstr = '#ea5f1c', GradientType = 0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.orange:hover {
+    color: #ffffff;
+    background-color: #e94b00;
+    *background-color: #e94b00;
+}
+
+
+input[type="submit"].btn:after{
+    content: '»'
+}
+
+.picker > input[type="text"]{
+    width: 50px;
+}

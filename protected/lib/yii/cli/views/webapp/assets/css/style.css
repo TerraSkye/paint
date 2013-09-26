@@ -1,0 +1,494 @@
+/* anchor font color  */
+a {
+	color: #666;
+}
+
+div#header
+{
+	width: 920px;
+	height: 339px;
+	padding: 1px 40px 0px 40px;
+	z-index: 2;
+	position: relative;
+}
+
+div#header_progress
+{
+	width: 0px;
+	height: 2px;
+	margin-top: -2px;
+	z-index: 20;
+	position: relative;
+	background: #fdc012;
+	margin-bottom: 10px;
+}
+
+div#header_background
+{
+	width: 920px;
+	height: 339px;
+	padding: 1px 40px 0px 40px;
+	z-index: 0;
+	position: absolute;
+	background: url(img/slide_2.png);
+}
+
+div#header_foreground
+{
+	width: 920px;
+	height: 339px;
+	padding: 1px 40px 0px 40px;
+	z-index: 1;
+	background: url(img/slide_1.png);
+	position: absolute;
+}
+
+div#header p
+{
+	z-index: 2;
+	position: relative;
+	background: url(img/header_desc_background.png);
+	font: 14px Arial;
+	color: #fff;
+	width: 500px;
+	margin: 90px 0px 0px 378px;
+	padding: 1em;
+	height: 50px;
+}
+
+div#header a.vote
+{
+	z-index: 2;
+	position: relative;
+	background: url(img/button_vote.png);
+	font: 12px Arial;
+	color: #fff;
+	width: 140px;
+	height: 40px;
+	font-size: 0px;
+	margin: 20px 0px 0px 768px;
+	display: block;
+}
+
+div#header a.prev
+{
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: url(img/header_button.png) -35px 0px; z-index: 3;
+	text-decoration: none;
+	margin-left: -35px; margin-top: -60px;
+}
+
+div#header a.prev:hover
+{
+	background-position: -35px -35px;
+}
+
+div#header a.next
+{
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: url(img/header_button.png);
+	z-index: 3;
+	text-decoration: none;
+	margin-left: 920px;
+	margin-top: -60px;
+}
+
+div#header a.next:hover
+{
+	background-position: 0px -35px;
+}
+
+div#header ul
+{
+	z-index: 2;
+	position: relative;
+	text-align: right;
+	top: 10px;
+	margin: 0 0.6em 1.5em 0;
+}
+
+div#header ul li
+{
+	list-style: none;
+	display: inline;
+	margin: 0px 5px 0px 5px;
+}
+
+div#header ul li a img
+{
+	border: 3px solid #fff;
+}
+
+div#header ul li.active a img
+{
+	border: 3px solid #666;
+}
+
+nav ul li
+{
+	list-style: none; padding: 0px 0px 10px 0px;
+}
+
+nav ul li a
+{
+	display: block;
+	width: 100px;
+	height: 16px;
+	padding: 12px 0px 12px 20px;
+	background: url(img/menubutton.png);
+	font: 12px Arial;
+	color: #444;
+	text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li.activated a
+{
+	background-position: 0px -40px;
+	color: #fff;
+}
+
+nav div.banner_vertical
+{
+	width: 120px;
+	height: 600px;
+	border: 1px dotted #000;
+	background: #eee;
+}
+
+aside div.social a
+{
+	text-decoration: none;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(img/social.png) no-repeat;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+aside div.social a.youtube
+{
+	background-position: -30px 0px;
+}
+
+aside div.social a.hyves
+{
+	background-position: -60px 0px;
+}
+
+aside div.social a.myspace
+{
+	background-position: -90px 0px;
+}
+
+aside div.social a.twitter
+{
+	background-position: -120px 0px;
+}
+
+aside div.advertplaceholder
+{
+	margin: 20px 0px 20px 0px;
+	width: 335px;
+	height: 280px;
+	border: 1px dotted #000;
+	background: #eee;
+}
+
+#partner-slider
+{
+	margin-top: 20px;
+	padding: 25px 0px 0px 0px;
+	height: 73px;
+	border: 1px solid #999;
+	margin-left: -140px;
+}
+
+.simply-scroll
+{
+	width: 100%;
+}
+
+.simply-scroll-clip 
+{
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+.simply-scroll-list 
+{
+	margin: 0;
+	padding: 0;
+}
+
+.simply-scroll-list li 
+{
+	list-style: none;
+}
+
+.simply-scroll-list li img 
+{
+	border: none;
+	display: block;
+}
+
+.simply-scroll 
+{
+	height: 80px;
+	width: 100% !important;
+	margin: 0 !important;
+}
+
+.simply-scroll .simply-scroll-clip 
+{
+	height: 80px;
+}
+
+.simply-scroll-clip
+{
+	width: auto !important;
+	margin: 10px; 
+}
+
+.simply-scroll-list li 
+{
+	float: left; height: 70px;
+	width: 240px;
+	text-align: center;
+}
+
+#content 
+{
+	overflow: visible;
+	width: 484px;
+	margin: 0 10px; line-height: 1.45em;
+}
+
+#frame-container
+{
+	box-shadow: 0 0 20px 10px #888;
+}
+
+#profile table th
+{
+	padding-left: 0;
+	vertical-align: top;
+}
+
+#profile table td
+{
+	vertical-align: top;
+}
+
+#content h1 
+{
+	font-size: 16px;
+	background: url('img/header.png') no-repeat;
+	height: 40px;
+	color: white;
+	line-height: 40px;
+	padding: 0 1em;
+}
+
+#content .sponsor-logo
+{
+	display: block;
+	margin: 1em auto;
+}
+
+#content hr
+{
+	background: url('img/grijs_lijntje.png') no-repeat;
+	height: 1px; 
+	width: 374px;
+	margin: 1em auto;
+}
+
+#contestant-navigation
+{
+	padding: 0;
+	margin: 1em 0;
+}
+
+#contestant-navigation li
+{
+	float: left;
+	list-style: none;
+}
+
+#contestant-navigation.list-page li.mannen,
+#contestant-navigation.list-page li.vrouwen
+{
+	float: right;
+}
+
+#contestant-navigation li a
+{
+	display: block;
+	color: #F3F3F3; 
+	text-decoration: none; 
+	width: 129px;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 6em;
+	background: url('img/btn_man_vrouw.png') no-repeat;
+}
+
+#contestant-navigation li.mannen a
+{
+	background: url('img/btn_mannen.png') no-repeat;
+}
+
+#contestant-navigation li a:hover
+{
+	color: #EEE;
+}
+
+#contestant-navigation li.vrouwen a
+{
+	background-image: url('img/btn_vrouwen.png');
+}
+
+#contestant-navigation li.vrouwen
+{
+	float: right;
+}
+
+aside .slideshow
+{
+	margin-top: 10px;
+}
+.banner, #leftmenu .banner, #aside .banner
+{
+	margin-top: 10px;
+}
+
+div#profile div.navigation
+{
+	padding-bottom: 1em;
+}
+
+div#profile div.navigation .index
+{
+	display: block;
+	float: left;
+}
+
+div#profile div.navigation .index a:hover
+{
+	background-image: url('img/btn_overview_hover.png');
+}
+
+div#profile div.navigation a
+{
+	width: 170px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 30px;
+	color: white; 
+	text-decoration: none;
+}
+
+div#profile div.navigation .index a 
+{
+	background: url('img/btn_overview.png') no-repeat;
+	width: 200px;
+	width: 200px;
+	text-align: center;
+	padding: 0;
+}
+div#profile div.navigation span a
+{
+	width: 110px;
+}
+div#profile div.navigation span.next a
+{
+	background: url('img/btn_next.png') no-repeat;
+}
+div#profile div.navigation span.previous a
+{
+	background: url('img/btn_prev.png') no-repeat;
+	margin-right: 2px;
+}
+
+div#content h2
+{
+	background: url(img/header.png) no-repeat;
+	font: bold	 13px Arial;
+	color: #fff;
+	padding: 10px;
+	width: 465px;
+	height: 20px;
+	margin: 0 0 1em 0;
+	white-space: nowrap;
+}
+
+div#content b, p,
+div#content-left p
+{
+	padding-left:15px;
+}
+
+div#content-left ul
+{
+	padding-left:30px; 
+}
+
+div#content-left ul#contestant-navigation
+{
+	margin: 0 1.5em 1.5em 0;
+	padding-left:1.5em;
+}
+
+div#content p b,
+div#content p.description
+{
+	padding-left: 0px;
+}
+
+table.ranking 
+{ 
+  float: left;
+  width: 236px;
+}
+
+table.ranking + table.ranking 
+{ 
+  margin-left: 10px;
+}
+
+table.ranking td.score 
+{
+    background: url('img/bg_tussenstand.jpg') no-repeat;
+    text-align: center;
+    padding-top: 26px;
+    width: 52px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-position: top left;
+    padding-bottom: 0px;
+}
+
+table.ranking td.thumbnail 
+{
+    background: url('img/bg_tussenstand.jpg') no-repeat;
+    background-position: top center;
+    padding: 2px 2px 1px 2px;
+}
+
+table.ranking td.name 
+{
+    background: url('img/bg_tussenstand.jpg') no-repeat;
+    background-position: top right;
+    vertical-align: middle;
+    line-height: 1.6;
+}

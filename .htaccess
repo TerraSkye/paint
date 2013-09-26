@@ -1,0 +1,17 @@
+#allow from all
+
+#AuthType Basic
+#AuthName "Restricted Area (Demo environment)"
+# (Following line optional)
+#AuthBasicProvider file
+#AuthUserFile /var/www/projects/nyx/.htpasswd
+#Require user invideu
+
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule ^.*$ index.php [L]
