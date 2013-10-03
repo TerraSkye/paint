@@ -31,7 +31,7 @@ class TestController extends CWizardController
             'ranking' => array(//transaction
                 'class' => 'CWizardModelAction',
                 'model' => 'RankingForm',
-                'view' => '_interest',
+                'view' => '_ranking',
             ),
             'contact' => array(//transaction
                 'class' => 'CWizardModelAction',

@@ -1341,3 +1341,23 @@ REQUEST_URI=/paint/test/basic
 HTTP_REFERER=http://mani.dev/paint/test/
 ---
 2013/10/03 13:17:19 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:40:32 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:45:27 [error] [exception.CException] exception 'CException' with message 'TestController cannot find the requested view "_interest".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php:879
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\components\CommonController.php(29): CController->renderPartial('_interest', Array, true, false)
+#1 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(208): CommonController->renderPartial('_interest', Array, true, false)
+#2 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(783): CWizardController->renderPartial('_interest', Array, true)
+#3 C:\xampp\htdocs\paint\protected\components\CommonController.php(38): CController->render('_interest', Array, false)
+#4 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(203): CommonController->render('_interest', Array, false)
+#5 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(72): CWizardController->render('_interest', Array)
+#6 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(63): CWizardModelAction->run()
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): CWizardController->runAction(Object(CWizardModelAction))
+#8 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CWizardModelAction), Array)
+#9 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): CController->run('artist')
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('test/artist')
+#11 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#13 {main}
+REQUEST_URI=/paint/test/artist
+HTTP_REFERER=http://mani.dev/paint/test/activity
+---
