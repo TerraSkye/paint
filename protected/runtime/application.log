@@ -1187,3 +1187,35 @@ Stack trace:
 REQUEST_URI=/paint/test/answers
 HTTP_REFERER=http://mani.dev/paint/test/basic
 ---
+2013/10/03 12:21:00 [warning] [application] Failed to set unsafe attribute "question" of "RankingForm".
+2013/10/03 12:22:52 [error] [exception.CException] exception 'CException' with message 'Property "RankingForm.artist" is not defined.' in C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\helpers\CHtml.php(2033): CComponent->__get('artist')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\web\helpers\CHtml.php(1305): CHtml::resolveValue(Object(RankingForm), 'artist[1]')
+#2 C:\xampp\htdocs\paint\protected\lib\yii\web\widgets\CActiveForm.php(650): CHtml::activeRadioButton(Object(RankingForm), 'artist[1]', Array)
+#3 C:\xampp\htdocs\paint\protected\widgets\bootstrap\TbControlGroup.php(452): CActiveForm->radioButton(Object(RankingForm), 'artist[1]', Array)
+#4 C:\xampp\htdocs\paint\protected\widgets\bootstrap\TbControlGroup.php(313): TbControlGroup->buildRadioButton(Object(RankingForm), 'artist[1]', Array, Array)
+#5 C:\xampp\htdocs\paint\protected\widgets\bootstrap\TbControlGroup.php(178): TbControlGroup->buildControl('artist[1]', 'radioButton', Array, Array)
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(148): TbControlGroup->init()
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(173): CBaseController->createWidget('common.widgets....', Array)
+#8 C:\xampp\htdocs\paint\themes\classic\views\test\_interest.php(30): CBaseController->widget('common.widgets....', Array)
+#9 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\paint\protected\components\CommonController.php(29): CController->renderPartial('_interest', Array, true, false)
+#13 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(208): CommonController->renderPartial('_interest', Array, true, false)
+#14 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(783): CWizardController->renderPartial('_interest', Array, true)
+#15 C:\xampp\htdocs\paint\protected\components\CommonController.php(38): CController->render('_interest', Array, false)
+#16 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(203): CommonController->render('_interest', Array, false)
+#17 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(72): CWizardController->render('_interest', Array)
+#18 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(63): CWizardModelAction->run()
+#19 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): CWizardController->runAction(Object(CWizardModelAction))
+#20 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CWizardModelAction), Array)
+#21 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): CController->run('artist')
+#22 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('test/artist')
+#23 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#25 {main}
+REQUEST_URI=/paint/test/artist
+HTTP_REFERER=http://mani.dev/paint/test/answers
+---
