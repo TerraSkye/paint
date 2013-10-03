@@ -47,7 +47,7 @@ class CWizardModelAction extends CWizardAction
 	 */
 	public function post()
 	{
-		$this->instance->attributes = $_POST[get_class($this->instance)];
+		$this->instance->attributes = Yii::app()->request->getPost(get_class($this->instance),array());
 	}
 
 	/**

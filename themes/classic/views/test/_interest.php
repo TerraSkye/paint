@@ -8,22 +8,23 @@
         'action' => $this->createUrl($action->id),
     )); ?>
 
-    <div class="section-header">
-    Activiteiten
-        </div>
+  
+<?php foreach(Artist::model()->findAll() as $artist):?>
 
 
-
-<?php foreach(Activity::model()->findAll() as $activity):?>
     <?php $this->widget('common.widgets.bootstrap.TbControlGroup', array(
     	'model' => $model,
-    	'label' => $activity->value,
+    	'label' => $artist->value,
     	'items' => array(
-    		"activity[{$activity->primaryKey}]" => array(
-    			'type' => TbControlGroup::TEXT_FIELD,
-    			'htmlOptions' => array(
-    				'class' => 'span3',
-    			)
+    		"artist[{$artist->primaryKey}]" => array(
+    			'type' => TbControlGroup::RADIO_BUTTON,
+                'typeOptions' => array(
+                    'data' => $model->scale,
+                ),
+                'htmlOptions' => array(
+                    'uncheckValue' => null,
+                )
+
     		),
     	)
     )); ?>

@@ -11,8 +11,10 @@ return array(
         'assets' => array(
             'css' => array(
                 'application.assets.css' => array(
+                    'normalize.min.css',
+                    'framework.css',
+                    'main.css',
                     'layout.css',
-                    'style.css',
 
                 ),
             ),

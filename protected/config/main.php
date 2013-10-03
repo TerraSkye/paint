@@ -13,12 +13,13 @@ return array(
     'language' => 'nl_NL',
     'sourceLanguage' => '00',
     'preload' => array('log', 'bootstrap', 'wizard'),
-   // 'onBeginRequest' => array('ApplicationInitializer', 'publish'),
+   'onBeginRequest' => array('ApplicationInitializer', 'publish'),
     'defaultController' => 'test/index',
 
     // autoloading model and component classes
     'import' => array(
         'application.models.*',
+        'application.models.forms.*',
         'application.widgets.uniframe.*',
         'application.widgets.*',
         'application.components.*',
@@ -30,6 +31,7 @@ return array(
         'application.modules.user.models.*',
         'application.extensions.yii-mail.*',
         'application.modules.contact.registration.*',
+        'application.widgets.bootstrap.*',
     ),
 
     'modules' => array(

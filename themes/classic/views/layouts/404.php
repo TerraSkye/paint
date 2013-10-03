@@ -3,8 +3,6 @@
 	<?php $this->renderPartial('//layouts/_menuTop'); ?>
 </nav>
 <section class="content-center">
-	<div class="content-inner">
-		<?php echo $content; ?>
-	</div>
+	<?php echo $content; ?>
 </section>
 <?php $this->endContent(); ?>

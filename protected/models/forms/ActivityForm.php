@@ -7,14 +7,20 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class RankingForm extends CFormModel{
+class ActivityForm extends CFormModel
+{
 
 
-    public $test;
+    public $activity;
 
-    public function rules(){
+
+
+    public function rules()
+    {
         return array(
-            array("test","required")
+            array("activity", "required")
         );
     }
+
+
 }

@@ -165,3 +165,57 @@ input[type="submit"].btn:after{
 .picker > input[type="text"]{
     width: 50px;
 }
+
+
+
+.registration-form {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px; }
+.registration-form p {
+    margin: 10px 5px; }
+.registration-form p + .section-header {
+    margin-top: 20px; }
+.registration-form .section-header + p {
+    margin-top: -10px; }
+
+.section-header {
+    text-transform: uppercase;
+    background-color: #006cb1;
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+    line-height: 20px;
+    height: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff; }
+
+.has-account {
+    margin-top: 20px; }
+.has-account h3 {
+    font-size: 16px;
+    margin: 0; }
+.has-account p {
+    margin: 5px 0 15px 0; }
+.has-account .control-group.row-fluid {
+    margin-bottom: 10px; }
+
+
+.form-horizontal .control-label {
+    font-weight: bold; }
+.form-horizontal .section-header + .well.well-small {
+    margin-top: -20px;
+    border-top: none;
+    border-radius: 0 0 3px 3px; }
+.form-horizontal .section-header + .well.well-small .span4 {
+    font-weight: bold;
+    text-align: right; }
+.form-horizontal .grid-view .pull-right {
+    margin-bottom: 10px; }
+.form-horizontal .credit-radio-options {
+    margin: 5px 0 10px 20px;
+    line-height: 30px; }
+.form-horizontal .credit-radio-options table {
+    margin-top: 10px;
+    margin-bottom: 0; }
