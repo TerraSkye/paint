@@ -1361,3 +1361,164 @@ Stack trace:
 REQUEST_URI=/paint/test/artist
 HTTP_REFERER=http://mani.dev/paint/test/activity
 ---
+2013/10/03 14:29:14 [error] [exception.CException] exception 'CException' with message 'Property "RankingForm.ranking" is not defined.' in C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\helpers\CHtml.php(2044): CComponent->__get('ranking')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(RankingForm), 'ranking')
+#2 C:\xampp\htdocs\paint\protected\lib\yii\web\helpers\CHtml.php(1219): CHtml::activeInputField('hidden', Object(RankingForm), 'ranking', Array)
+#3 C:\xampp\htdocs\paint\protected\lib\yii\web\widgets\CActiveForm.php(590): CHtml::activeHiddenField(Object(RankingForm), 'ranking', Array)
+#4 C:\xampp\htdocs\paint\themes\classic\views\test\_ranking.php(26): CActiveForm->hiddenField(Object(RankingForm), 'ranking')
+#5 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\paint\protected\components\CommonController.php(29): CController->renderPartial('_ranking', Array, true, false)
+#9 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(208): CommonController->renderPartial('_ranking', Array, true, false)
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(783): CWizardController->renderPartial('_ranking', Array, true)
+#11 C:\xampp\htdocs\paint\protected\components\CommonController.php(38): CController->render('_ranking', Array, false)
+#12 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(203): CommonController->render('_ranking', Array, false)
+#13 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(72): CWizardController->render('_ranking', Array)
+#14 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(63): CWizardModelAction->run()
+#15 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): CWizardController->runAction(Object(CWizardModelAction))
+#16 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CWizardModelAction), Array)
+#17 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): CController->run('ranking')
+#18 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('test/ranking')
+#19 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#21 {main}
+REQUEST_URI=/paint/test/ranking
+HTTP_REFERER=http://mani.dev/paint/test/ranking
+---
+2013/10/03 14:32:11 [error] [exception.CException] exception 'CException' with message 'TestController contains improperly nested widget tags in its view "C:\xampp\htdocs\paint\themes\classic\views/test\_contact.php". A TbActiveForm widget does not have an endWidget() call.' in C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php:102
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#1 C:\xampp\htdocs\paint\protected\components\CommonController.php(29): CController->renderPartial('_contact', Array, true, false)
+#2 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(208): CommonController->renderPartial('_contact', Array, true, false)
+#3 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(783): CWizardController->renderPartial('_contact', Array, true)
+#4 C:\xampp\htdocs\paint\protected\components\CommonController.php(38): CController->render('_contact', Array, false)
+#5 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(203): CommonController->render('_contact', Array, false)
+#6 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(72): CWizardController->render('_contact', Array)
+#7 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(63): CWizardModelAction->run()
+#8 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): CWizardController->runAction(Object(CWizardModelAction))
+#9 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CWizardModelAction), Array)
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): CController->run('ranking')
+#11 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('test/ranking')
+#12 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#14 {main}
+REQUEST_URI=/paint/test/ranking
+HTTP_REFERER=http://mani.dev/paint/test/ranking
+---
+2013/10/03 14:35:20 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.birth_date" is not defined.' in C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\widgets\bootstrap\TbControlGroup.php(382): CComponent->__get('birth_date')
+#1 C:\xampp\htdocs\paint\protected\widgets\bootstrap\TbControlGroup.php(308): TbControlGroup->buildDateDropDown(Object(ContactForm), 'birth_date', Array, Array)
+#2 C:\xampp\htdocs\paint\protected\widgets\bootstrap\TbControlGroup.php(178): TbControlGroup->buildControl('birth_date', 'dateDropDown', Array, Array)
+#3 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(148): TbControlGroup->init()
+#4 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(173): CBaseController->createWidget('common.widgets....', Array)
+#5 C:\xampp\htdocs\paint\themes\classic\views\test\_contact.php(58): CBaseController->widget('common.widgets....', Array)
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\paint\protected\components\CommonController.php(29): CController->renderPartial('_contact', Array, true, false)
+#10 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(208): CommonController->renderPartial('_contact', Array, true, false)
+#11 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(783): CWizardController->renderPartial('_contact', Array, true)
+#12 C:\xampp\htdocs\paint\protected\components\CommonController.php(38): CController->render('_contact', Array, false)
+#13 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(203): CommonController->render('_contact', Array, false)
+#14 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(72): CWizardController->render('_contact', Array)
+#15 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(63): CWizardModelAction->run()
+#16 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): CWizardController->runAction(Object(CWizardModelAction))
+#17 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CWizardModelAction), Array)
+#18 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): CController->run('ranking')
+#19 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('test/ranking')
+#20 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#22 {main}
+REQUEST_URI=/paint/test/ranking
+HTTP_REFERER=http://mani.dev/paint/test/ranking
+---
+2013/10/03 14:38:16 [error] [php] include(XDateTime.php): failed to open stream: No such file or directory (C:\xampp\htdocs\paint\protected\lib\yii\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\models\forms\ContactForm.php(143): spl_autoload_call()
+#1 C:\xampp\htdocs\paint\protected\models\forms\ContactForm.php(38): ContactForm->getDateTime()
+#2 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): ContactForm->getDate_of_birth()
+#3 C:\xampp\htdocs\paint\protected\lib\yii\base\CModel.php(441): ContactForm->__get()
+#4 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): ContactForm->getAttributes()
+#5 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(58): ContactForm->__get()
+#6 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): CWizardModelAction->getData()
+#7 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(62): CWizardModelAction->__get()
+#8 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): TestController->runAction()
+#9 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): TestController->runActionWithFilters()
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): TestController->run()
+#11 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#12 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\paint\index.php(48): CWebApplication->run()
+REQUEST_URI=/paint/test/ranking
+2013/10/03 14:45:59 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".
+2013/10/03 14:45:59 [warning] [application] Failed to set unsafe attribute "date_of_birth" of "ContactForm".
+2013/10/03 14:45:59 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.test" is not defined.' in C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\validators\CRequiredValidator.php(52): CComponent->__get('test')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\validators\CValidator.php(197): CRequiredValidator->validateAttribute(Object(ContactForm), 'test')
+#2 C:\xampp\htdocs\paint\protected\lib\yii\base\CModel.php(158): CValidator->validate(Object(ContactForm), NULL)
+#3 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(83): CModel->validate()
+#4 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(41): CWizardModelAction->validate()
+#5 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): CWizardController->runAction(Object(CWizardModelAction))
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CWizardModelAction), Array)
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): CController->run('contact')
+#8 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('test/contact')
+#9 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#11 {main}
+REQUEST_URI=/paint/test/contact
+HTTP_REFERER=http://mani.dev/paint/test/ranking
+---
+2013/10/03 14:47:26 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".
+2013/10/03 14:47:26 [warning] [application] Failed to set unsafe attribute "date_of_birth" of "ContactForm".
+2013/10/03 14:47:26 [error] [exception.CException] exception 'CException' with message 'Property "ContactForm.test" is not defined.' in C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\validators\CRequiredValidator.php(52): CComponent->__get('test')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\validators\CValidator.php(197): CRequiredValidator->validateAttribute(Object(ContactForm), 'test')
+#2 C:\xampp\htdocs\paint\protected\lib\yii\base\CModel.php(158): CValidator->validate(Object(ContactForm), NULL)
+#3 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(83): CModel->validate()
+#4 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(41): CWizardModelAction->validate()
+#5 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): CWizardController->runAction(Object(CWizardModelAction))
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CWizardModelAction), Array)
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): CController->run('contact')
+#8 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('test/contact')
+#9 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#11 {main}
+REQUEST_URI=/paint/test/contact
+HTTP_REFERER=http://mani.dev/paint/test/ranking
+---
+2013/10/03 14:47:56 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".
+2013/10/03 14:48:05 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".
+2013/10/03 14:48:05 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".
+2013/10/03 14:48:05 [error] [exception.CException] exception 'CException' with message 'TestController has an extra endWidget() call in its view.' in C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php:211
+Stack trace:
+#0 C:\xampp\htdocs\paint\themes\classic\views\test\_summary.php(15): CBaseController->endWidget()
+#1 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\paint\protected\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#3 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\paint\protected\components\CommonController.php(29): CController->renderPartial('_summary', Array, true, false)
+#5 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(208): CommonController->renderPartial('_summary', Array, true, false)
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(783): CWizardController->renderPartial('_summary', Array, true)
+#7 C:\xampp\htdocs\paint\protected\components\CommonController.php(38): CController->render('_summary', Array, false)
+#8 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(203): CommonController->render('_summary', Array, false)
+#9 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardSummaryAction.php(60): CWizardController->render('_summary', Array)
+#10 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(63): CWizardSummaryAction->run()
+#11 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): CWizardController->runAction(Object(CWizardModelAction))
+#12 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CWizardModelAction), Array)
+#13 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): CController->run('contact')
+#14 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('test/contact')
+#15 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#17 {main}
+REQUEST_URI=/paint/test/contact
+HTTP_REFERER=http://mani.dev/paint/test/contact
+---
+2013/10/03 14:48:20 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".
+2013/10/03 14:48:20 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".
+2013/10/03 14:49:18 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".
+2013/10/03 14:49:18 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".
+2013/10/03 14:49:27 [warning] [application] Failed to set unsafe attribute "is_female" of "ContactForm".

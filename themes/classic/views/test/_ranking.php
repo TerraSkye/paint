@@ -23,6 +23,10 @@
         Basis vragen
     </div>
 
+    <?php echo $form->errorSummary($model)?>
+
+    <?php echo  $form->hiddenField($model,'ranking',array('value' => "dennis is gay")) ; ?>
+
     <style>
         li.pull-left.well.well-small{
             list-style: none;
@@ -89,4 +93,5 @@
     <?php $this->renderPartial('wizardControls') ?>
     <?php $this->endWidget();?>
 
+    </div>
 

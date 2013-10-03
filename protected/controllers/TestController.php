@@ -38,6 +38,10 @@ class TestController extends CWizardController
                 'model' => 'ContactForm',
                 'view' => '_contact',
             ),
+            'summary' => array(//transaction
+                'class' => 'CWizardSummaryAction',
+                'view' => '_summary',
+            ),
          );
         return $actions;
     }

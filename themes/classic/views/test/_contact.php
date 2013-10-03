@@ -36,5 +36,50 @@
         )
     )); ?>
 
+    <?php $this->widget('common.widgets.bootstrap.TbControlGroup', array(
+        'model' => $model,
+        'items' => array(
+            'date_of_birth' => array(
+                'type' => TbControlGroup::DATE_DROP_DOWN,
+                'typeOptions' => array(
+                    'data' => array(
+                        'd' => XHtml::getDayData(),
+                        'm' => XHtml::getMonthData(),
+                        'Y' => XHtml::getYearData(),
+                    ),
+                ),
+                'htmlOptions' => array(
+                    'd' => array('class' => 'span2'),
+                    'm' => array('class' => 'span3'),
+                    'Y' => array('class' => 'span3')
+                ),
+            )
+        )
+    )); ?>
+
+
+    <?php $this->widget('common.widgets.bootstrap.TbControlGroup', array(
+        'model' => $model,
+        'items' => array(
+            "education_id" => array(
+                'type' => TbControlGroup::RADIO_BUTTON,
+                'typeOptions' => array(
+                    'data' =>    CHtml::listData(Education::model()->findAll(),'education_id','value')
+                ),
+                'htmlOptions' => array(
+                    'radioClass' => 'radio',
+                    'uncheckValue' => null,
+                )
+            ),
+        )
+    )); ?>
+
+    <?php ?>
+
+    <?php $this->renderPartial('wizardControls') ?>
+    <?php $this->endWidget();?>
+
+
 
 </div>
+

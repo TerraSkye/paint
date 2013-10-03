@@ -11,14 +11,14 @@ class RankingForm extends CFormModel
 {
 
 
-    public $test;
+    public $ranking;
 
 
 
     public function rules()
     {
         return array(
-            array("test", "required")
+            array("ranking", "required")
         );
     }
 
