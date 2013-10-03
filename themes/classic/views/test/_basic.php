@@ -1,6 +1,9 @@
 
     <div class="registration-form">
 
+
+
+
         <?php
         /* @var $form TbActiveForm*/
          $form = $this->beginWidget('application.widgets.bootstrap.TbActiveForm', array(
@@ -10,24 +13,19 @@
             'action' => $this->createUrl($action->id),
         )); ?>
 
+        <div class="section-header">
+            Inleiding
+        </div>
+        <p>
+            Van harte welkom bij deze vragenlijst, die is opgezet door onderzoekers van Hanzehogeschool Groningen, met de bedoeling meer te weten te komen over waarom mensen wel of niet van kunst houden. In totaal zal het invullen van deze vragenlijst ongeveer tien minuten duren. We hebben ons best gedaan het voor u ook leuk te maken om aan het onderzoek deel te nemen: we zullen u bijvoorbeeld een aantal kunstwerken laten zien, zodat u aan de hand daarvan kunt aangeven wat u wel, of juist niet mooi vindt.
+            Graag willen we u vragen om het invullen van de vragenlijst in één keer helemaal af te maken, en om tijdens het invullen geen andere vensters open te zetten in uw browser. Dit onderzoek gaat over uw smaak in kunst. U kunt dus geen ‘verkeerde’ antwoorden geven, want over smaak valt immers niet te twisten!
 
+            Dank u wel voor uw deelname!
+        </p>
+<div class="section-header">
+Basis vragen
+</div>
 
-        <?php
-        $this->widget('common.widgets.bootstrap.TbControlGroup', array(
-            'model' => $model,
-            'label' =>false,
-            'items' => array(
-                TbControlGroup::FREE_TEXT => array(
-                    'typeOptions' => array(
-                        'encodeHtml' => FALSE,
-                        'content' => "Natuurlijk bestaat er niet zoiets als ‘de gemiddelde Nederlander’.
-                Maar als u uzelf vergelijkt met wat andere mensen van kunst weten,
-                in hoeverre bent u dan onder gemiddeld of bovengemiddeld?"
-                    )
-                )
-            )
-        ));
-        ?>
 
 
 
@@ -43,19 +41,10 @@
                     'uncheckValue' => null,
                 )
     		),
-            TbControlGroup::FREE_TEXT => array(
-                'typeOptions' => array(
-                    'encodeHtml' => FALSE,
-                    'content' => "Veel"
-                ),
-                'htmlOptions' => array(
-                    'class' => 'radio inline',
-                ),
-            )
     	)
     )); ?>
 
-
+        <div class="section-divider"></div>
 
         <?php $this->widget('common.widgets.bootstrap.TbControlGroup', array(
         	'model' => $model,
@@ -76,7 +65,7 @@
         		),
         	)
         )); ?>
-
+        <div class="section-divider"></div>
         <?php $this->widget('common.widgets.bootstrap.TbControlGroup', array(
             'model' => $model,
             'label' => Yii::t('text',$model->question2),

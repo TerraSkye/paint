@@ -14,7 +14,6 @@ class ActivityForm extends CFormModel
     public $activity;
 
 
-
     public function rules()
     {
         return array(
@@ -22,5 +21,12 @@ class ActivityForm extends CFormModel
         );
     }
 
+
+    public function generateAttributeLabel($name)
+    {
+        if (strpos($name, "Activity[") !== false)
+            return "";
+        return parent::generateAttributeLabel($name);
+    }
 
 }

@@ -1219,3 +1219,125 @@ Stack trace:
 REQUEST_URI=/paint/test/artist
 HTTP_REFERER=http://mani.dev/paint/test/answers
 ---
+2013/10/03 12:46:25 [error] [php] include(Basic.php): failed to open stream: No such file or directory (C:\xampp\htdocs\paint\protected\lib\yii\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(40): spl_autoload_call()
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): CWizardModelAction->getInstance()
+#2 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(58): CWizardModelAction->__get()
+#3 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): CWizardModelAction->getData()
+#4 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(62): CWizardModelAction->__get()
+#5 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): TestController->runAction()
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): TestController->runActionWithFilters()
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(748): TestController->run()
+#8 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(29): TestController->forward()
+#9 C:\xampp\htdocs\paint\protected\lib\yii\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(65): TestController->runAction()
+#12 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): TestController->runAction()
+#13 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): TestController->runActionWithFilters()
+#14 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): TestController->run()
+#15 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\paint\index.php(48): CWebApplication->run()
+REQUEST_URI=/paint/test/
+2013/10/03 12:46:34 [error] [php] include(Basic.php): failed to open stream: No such file or directory (C:\xampp\htdocs\paint\protected\lib\yii\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(40): spl_autoload_call()
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): CWizardModelAction->getInstance()
+#2 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(58): CWizardModelAction->__get()
+#3 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): CWizardModelAction->getData()
+#4 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(62): CWizardModelAction->__get()
+#5 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): TestController->runAction()
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): TestController->runActionWithFilters()
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(748): TestController->run()
+#8 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(29): TestController->forward()
+#9 C:\xampp\htdocs\paint\protected\lib\yii\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(65): TestController->runAction()
+#12 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): TestController->runAction()
+#13 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): TestController->runActionWithFilters()
+#14 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): TestController->run()
+#15 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\paint\index.php(48): CWebApplication->run()
+REQUEST_URI=/paint/test/
+2013/10/03 12:46:39 [error] [php] include(Basic.php): failed to open stream: No such file or directory (C:\xampp\htdocs\paint\protected\lib\yii\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(40): spl_autoload_call()
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): CWizardModelAction->getInstance()
+#2 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(58): CWizardModelAction->__get()
+#3 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): CWizardModelAction->getData()
+#4 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(62): CWizardModelAction->__get()
+#5 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): TestController->runAction()
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): TestController->runActionWithFilters()
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(748): TestController->run()
+#8 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(29): TestController->forward()
+#9 C:\xampp\htdocs\paint\protected\lib\yii\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(65): TestController->runAction()
+#12 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): TestController->runAction()
+#13 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): TestController->runActionWithFilters()
+#14 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): TestController->run()
+#15 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\paint\index.php(48): CWebApplication->run()
+REQUEST_URI=/paint/test/
+2013/10/03 12:46:43 [error] [php] include(Basic.php): failed to open stream: No such file or directory (C:\xampp\htdocs\paint\protected\lib\yii\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(40): spl_autoload_call()
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): CWizardModelAction->getInstance()
+#2 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(58): CWizardModelAction->__get()
+#3 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(112): CWizardModelAction->getData()
+#4 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(62): CWizardModelAction->__get()
+#5 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): TestController->runAction()
+#6 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): TestController->runActionWithFilters()
+#7 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(748): TestController->run()
+#8 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(29): TestController->forward()
+#9 C:\xampp\htdocs\paint\protected\lib\yii\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(65): TestController->runAction()
+#12 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): TestController->runAction()
+#13 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): TestController->runActionWithFilters()
+#14 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): TestController->run()
+#15 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\paint\index.php(48): CWebApplication->run()
+REQUEST_URI=/paint/test/
+2013/10/03 12:59:23 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:03:10 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:03:33 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:04:28 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:04:58 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:05:23 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:05:47 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:05:58 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:06:25 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:06:38 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:08:17 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:08:53 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:09:05 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:11:48 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:11:49 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:12:33 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:12:48 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".
+2013/10/03 13:16:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\xampp\htdocs\paint\protected\lib\yii\web\CHttpRequest.php:929
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(559): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(189): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(161): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#4 {main}
+REQUEST_URI=/paint/test/answers
+HTTP_REFERER=http://mani.dev/paint/test/basic
+---
+2013/10/03 13:17:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\xampp\htdocs\paint\protected\lib\yii\web\CHttpRequest.php:929
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\base\CComponent.php(559): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(189): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(161): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#4 {main}
+REQUEST_URI=/paint/test/basic
+HTTP_REFERER=http://mani.dev/paint/test/
+---
+2013/10/03 13:17:19 [warning] [application] Failed to set unsafe attribute "question" of "BasicForm".

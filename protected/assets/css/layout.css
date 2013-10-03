@@ -219,3 +219,41 @@ input[type="submit"].btn:after{
 .form-horizontal .credit-radio-options table {
     margin-top: 10px;
     margin-bottom: 0; }
+
+.section-divider {
+    clear: both;
+    border-bottom: 1px solid #e7e7e7;
+    margin: 10px 0;
+    display: block; }
+
+.inner .btn-action,
+.inner .btn-submit {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ec008c;
+    *background-color: #ec008c;
+    background-image: -moz-linear-gradient(top, #ec008c, #b90059);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ec008c), to(#b90059));
+    background-image: -webkit-linear-gradient(top, #ec008c, #b90059);
+    background-image: -o-linear-gradient(top, #ec008c, #b90059);
+    background-image: linear-gradient(to bottom, #ec008c, #b90059);
+    background-repeat: repeat-x;
+    border-color: #b90059 #b90059 #a00040;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFB90059', endColorstr='#FFEC008C',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+.inner .btn-action:hover, .inner .btn-action:focus, .inner .btn-action:active, .inner .btn-action[disabled], .inner .btn-action.disabled,
+.inner .btn-submit:hover,
+.inner .btn-submit:focus,
+.inner .btn-submit:active,
+.inner .btn-submit[disabled],
+.inner .btn-submit.disabled {
+    color: #fff;
+    background-color: #b90059;
+    *background-color: #b90059; }
+.inner .btn-action[disabled], .inner .btn-action.disabled,
+.inner .btn-submit[disabled],
+.inner .btn-submit.disabled {
+    background-image: none; }
+.inner .btn-submit {
+    float: right; }

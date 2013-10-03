@@ -15,23 +15,28 @@ class TestController extends CWizardController
         $actions = array(
             'basic' => array(
                 'class' => 'CWizardModelAction',
-                'model' => 'RankingForm',
-                'view' => '_ranking',
+                'model' => 'BasicForm',
+                'view' => '_basic',
             ),
-            'answers' => array(
+            'activity' => array(
                 'class' => 'CWizardModelAction',
                 'model' => 'ActivityForm',
-                'view' => '_answer',
+                'view' => '_activity',
             ),
             'artist' => array(//transaction
                 'class' => 'CWizardModelAction',
                 'model' => 'ArtistForm',
-                'view' => '_interest',
+                'view' => '_artist',
             ),
-            'interests' => array(//transaction
+            'ranking' => array(//transaction
                 'class' => 'CWizardModelAction',
                 'model' => 'RankingForm',
                 'view' => '_interest',
+            ),
+            'contact' => array(//transaction
+                'class' => 'CWizardModelAction',
+                'model' => 'ContactForm',
+                'view' => '_contact',
             ),
          );
         return $actions;
