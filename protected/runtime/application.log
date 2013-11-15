@@ -3330,3 +3330,80 @@ Stack trace:
 REQUEST_URI=/paint/assets/9bc798d9/images/default/sprite_prev.png
 HTTP_REFERER=http://localhost/paint/enquete/ranking?filters=1
 ---
+2013/11/15 13:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/9bc798d9/images/default/sprite.png".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('assets/9bc798d9...')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#3 {main}
+REQUEST_URI=/paint/assets/9bc798d9/images/default/sprite.png
+HTTP_REFERER=http://localhost/paint/enquete/artist
+---
+2013/11/15 13:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/9bc798d9/images/default/sprite_y.png".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('assets/9bc798d9...')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#3 {main}
+REQUEST_URI=/paint/assets/9bc798d9/images/default/sprite_y.png
+HTTP_REFERER=http://localhost/paint/enquete/artist
+---
+2013/11/15 13:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/9bc798d9/images/default/sprite_x.png".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('assets/9bc798d9...')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#3 {main}
+REQUEST_URI=/paint/assets/9bc798d9/images/default/sprite_x.png
+HTTP_REFERER=http://localhost/paint/enquete/artist
+---
+2013/11/15 13:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/9bc798d9/images/default/loader.gif".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('assets/9bc798d9...')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#3 {main}
+REQUEST_URI=/paint/assets/9bc798d9/images/default/loader.gif
+HTTP_REFERER=http://localhost/paint/enquete/artist
+---
+2013/11/15 13:44:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/9bc798d9/images/default/sprite.png".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('assets/9bc798d9...')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#3 {main}
+REQUEST_URI=/paint/assets/9bc798d9/images/default/sprite.png
+HTTP_REFERER=http://localhost/paint/enquete/artist
+---
+2013/11/15 13:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/9bc798d9/images/default/default_thumb.png".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('assets/9bc798d9...')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#3 {main}
+REQUEST_URI=/paint/assets/9bc798d9/images/default/default_thumb.png
+HTTP_REFERER=http://localhost/paint/enquete/artist
+---
+2013/11/15 13:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/9bc798d9/images/default/sprite_prev.png".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('assets/9bc798d9...')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#3 {main}
+REQUEST_URI=/paint/assets/9bc798d9/images/default/sprite_prev.png
+HTTP_REFERER=http://localhost/paint/enquete/artist
+---
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".

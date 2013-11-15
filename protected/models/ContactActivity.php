@@ -40,7 +40,7 @@ class ContactActivity extends ActiveRecord {
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('contact_id, activity_id, create_date', 'required'),
+			array('contact_id, activity_id', 'required'),
 			array('amount', 'safe'),
 			array('contact_id, activity_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().

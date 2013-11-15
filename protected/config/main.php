@@ -13,8 +13,8 @@ return array(
     'language' => 'nl_NL',
     'sourceLanguage' => '00',
     'preload' => array('log', 'bootstrap', 'wizard'),
-   'onBeginRequest' => array('ApplicationInitializer', 'publish'),
-    'defaultController' => 'enquete/index',
+    'onBeginRequest' => array('ApplicationInitializer', 'publish'),
+    'defaultController' => 'site/index',
 
     // autoloading model and component classes
     'import' => array(
@@ -88,29 +88,22 @@ return array(
             'showScriptName' => false,
             'rules' => array(
 
-
-                '<Parentmodule>/<client_id:\d+>/<Childmodule>/<controller:\w+>/<action:\w+>/<id:\d+>'   =>
+                '<Parentmodule>/<client_id:\d+>/<Childmodule>/<controller:\w+>/<action:\w+>/<id:\d+>' =>
                 '<Parentmodule>/<Childmodule>/<controller>/<action>',
-                '<Parentmodule>/<client_id:\d+>/<Childmodule>/<controller:\w+>/<id:\d+>'                =>
+                '<Parentmodule>/<client_id:\d+>/<Childmodule>/<controller:\w+>/<id:\d+>' =>
                 '<Parentmodule>/<Childmodule>/<controller>/view',
-                '<Parentmodule>/<client_id:\d+>/<Childmodule>/<controller:\w+>/<action:\w+>'            =>
+                '<Parentmodule>/<client_id:\d+>/<Childmodule>/<controller:\w+>/<action:\w+>' =>
                 '<Parentmodule>/<Childmodule>/<controller>/<action>',
-
-                '<Parentmodule>/<client_id:\d+>/<Childmodule>/<controller:\w+>'                         =>
+                '<Parentmodule>/<client_id:\d+>/<Childmodule>/<controller:\w+>' =>
                 '<Parentmodule>/<Childmodule>/<controller>/index',
-                '<Parentmodule>/<client_id:\d+>/<Childmodule>/'                                         =>
+                '<Parentmodule>/<client_id:\d+>/<Childmodule>/' =>
                 '<Parentmodule>/<Childmodule>/',
-
                 '<module>/<controller:\w+>/<id:\d+>' => '<module>/<controller>/view',
                 '<module>/<controller:\w+>/<action:\w+>/<id:\d+>' => '<module>/<controller>/<action>',
                 '<module>/<controller:\w+>/<action:\w+>' => '<module>/<controller>/<action>',
-
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-
-
-
 
 
             ),

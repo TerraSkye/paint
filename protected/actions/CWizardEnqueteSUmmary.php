@@ -80,6 +80,7 @@ class CWizardEnqueteSummary extends CWizardModelAction
 								'painting_id' => $painting,
 							));
 							$contactPainting->saveWithChecks();
+                            $i++;
 						}
 					}
 
