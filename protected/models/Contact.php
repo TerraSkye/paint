@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'contact':
  * @property integer $contact_id
  * @property string $date_of_birth
+ * @property string $email
  * @property integer $is_female
  * @property integer $education_id
  * @property integer $knowledge_base
@@ -44,6 +45,7 @@ class Contact extends ActiveRecord {
 		return array(
 			array('date_of_birth, is_female, education_id, knowledge_base, create_date', 'required'),
 			array('is_female, education_id, knowledge_base', 'numerical', 'integerOnly'=>true),
+			array('email', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('contact_id, date_of_birth, is_female, education_id, knowledge_base, create_date', 'safe', 'on'=>'search'),
@@ -66,6 +68,7 @@ class Contact extends ActiveRecord {
 	public function attributeLabels() {
 		return array(
 			'contact_id' => 'Contact',
+			'email' => 'Emailadres',
 			'date_of_birth' => 'Date Of Birth',
 			'is_female' => 'Is Female',
 			'education_id' => 'Education',
@@ -85,6 +88,7 @@ class Contact extends ActiveRecord {
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('contact_id',$this->contact_id);
+		$criteria->compare('email',$this->email);
 		$criteria->compare('date_of_birth',$this->date_of_birth,true);
 		$criteria->compare('is_female',$this->is_female);
 		$criteria->compare('education_id',$this->education_id);

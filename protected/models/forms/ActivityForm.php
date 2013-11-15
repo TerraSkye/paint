@@ -11,7 +11,7 @@ class ActivityForm extends CFormModel
 {
 
 
-    public $activity;
+    private  $_activity;
 
 
     public function rules()
@@ -22,9 +22,31 @@ class ActivityForm extends CFormModel
     }
 
 
+    public function setActivity($data){
+        foreach($data as $activity => $value){
+
+            if(!empty($value)){
+                $this->_activity[$activity] = $value;
+            }
+        }
+    }
+
+    public function getActivity(){
+        return $this->_activity;
+    }
+
+
+    public function afterValidate(){
+    }
+
+
+    public function attributeNames(){
+        return array('activity');
+    }
+
     public function generateAttributeLabel($name)
     {
-        if (strpos($name, "Activity[") !== false)
+        if (strpos($name, "activity[") !== false)
             return "";
         return parent::generateAttributeLabel($name);
     }

@@ -13,14 +13,14 @@ class ContactForm extends CFormModel
     private static $_names;
 
     private $_date_of_birth;
-    public $is_female;
+    public $is_female = null;
     public $education_id;
 
 
     public function rules()
     {
         return array(
-            array("education_id,date_of_birth,education_id", "required")
+            array("education_id,date_of_birth,education_id,is_female", "required")
         );
     }
 
@@ -32,12 +32,13 @@ class ContactForm extends CFormModel
 
     public function setDate_of_birth($value)
     {
-        $this->setDateTime(__FUNCTION__, $value);
+
+        $this->_date_of_birth=    $this->setDateTime(__FUNCTION__, $value);
     }
 
     public function getDate_of_birth()
     {
-        return $this->getDateTime(__FUNCTION__);
+        return $this->_date_of_birth;
     }
 
 
@@ -91,7 +92,6 @@ class ContactForm extends CFormModel
     public function setDateTime($attribute, $value)
     {
         $attribute = strtolower(substr($attribute, 3));
-
         if ($value instanceof XDateTime)
             $attribute = $value;
         elseif (is_array($value)) {

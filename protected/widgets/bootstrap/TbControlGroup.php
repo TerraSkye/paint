@@ -90,6 +90,13 @@ class TbControlGroup extends CWidget
      */
     private $_controlCss = 'controls controls-row span8';
 
+    public function setLabelClass($data){
+        $this->_labelCss = $data;
+    }
+    public function setControlCss($data){
+        $this->_controlCss = $data;
+    }
+
     /**
      * Initializes the widget
      */
@@ -601,7 +608,8 @@ class TbControlGroup extends CWidget
      */
     private function isDateDropDown(array $items)
     {
-        return current($items)['type'] === self::DATE_DROP_DOWN;
+        return false;
+       // return current($items)['type'] === self::DATE_DROP_DOWN;
     }
 
     /**

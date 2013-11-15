@@ -60,6 +60,18 @@ class Option extends ActiveRecord {
 		);
 	}
 
+
+
+    public function behaviors()
+    {
+        return array_merge(parent::behaviors(), array(
+            'DuplicateRecordResolver' => array(
+                'class' => 'application.components.DuplicateRecordResolver',
+                'matchingAttributes' => 'value'
+            )
+        ));
+    }
+
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */

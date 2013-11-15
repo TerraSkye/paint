@@ -51,6 +51,18 @@ class ContactPainting extends ActiveRecord {
 		);
 	}
 
+
+	public function behaviors()
+	{
+		return array_merge(parent::behaviors(), array(
+			'DuplicateRecordResolver' => array(
+				'class' => 'application.components.DuplicateRecordResolver',
+				'matchingAttributes' => "contact_id,painting_id",
+			),
+		));
+	}
+
+
 	/**
 	 * @return array relational rules.
 	 */

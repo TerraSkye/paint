@@ -15,9 +15,16 @@ return array(
                     'framework.css',
                     'main.css',
                     'layout.css',
-
+                    'prettyPhoto.css',
                 ),
             ),
+            'js' => array(
+                'application.assets.js' => array(
+                    'jquery.hover-intent.js',
+                    'jquery.drag.js',
+                    'jquery.prettyPhoto.js',
+                )
+            )
         ),
     )
 

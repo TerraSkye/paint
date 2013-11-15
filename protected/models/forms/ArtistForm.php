@@ -19,8 +19,6 @@ class ArtistForm extends CFormModel{
         );
     }
 
-
-
     public function getScale()
     {
         return array(
@@ -33,5 +31,9 @@ class ArtistForm extends CFormModel{
             -1 => -1
         );
 
+    }
+
+    public function attributeNames(){
+        return array('artist');
     }
 }

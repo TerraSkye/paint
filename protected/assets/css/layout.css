@@ -257,3 +257,22 @@ input[type="submit"].btn:after{
     background-image: none; }
 .inner .btn-submit {
     float: right; }
+
+
+label[for="BasicForm_question_1_-1"]{
+    float:left;
+}
+label[for="BasicForm_question_2_-1"]{
+    float:left;
+}
+
+.drag-container .item-wrapper {
+    float: left;
+    padding: 15px;
+}
+
+.sort-container .item-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+}

@@ -1302,7 +1302,9 @@ EOD;
 		self::resolveNameID($model,$attribute,$htmlOptions);
 		if(!isset($htmlOptions['value']))
 			$htmlOptions['value']=1;
-		if(!isset($htmlOptions['checked']) && self::resolveValue($model,$attribute)==$htmlOptions['value'])
+		if(!isset($htmlOptions['checked']) &&
+            (is_object($resolved =self::resolveValue($model,$attribute)) ? $resolved->__toInt() : $resolved)
+            == $htmlOptions['value'])
 			$htmlOptions['checked']='checked';
 		self::clientChange('click',$htmlOptions);
 
@@ -2020,6 +2022,7 @@ EOD;
 	 */
 	public static function resolveValue($model,$attribute)
 	{
+
 		if(($pos=strpos($attribute,'['))!==false)
 		{
 			if($pos===0)  // [a]name[b][c], should ignore [a]

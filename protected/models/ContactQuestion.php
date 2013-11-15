@@ -48,6 +48,16 @@ class ContactQuestion extends ActiveRecord {
 		);
 	}
 
+    public function behaviors()
+    {
+        return array_merge(parent::behaviors(), array(
+            'DuplicateRecordResolver' => array(
+                'class' => 'application.components.DuplicateRecordResolver',
+                'matchingAttributes' => 'contact_id, question_id'
+            )
+        ));
+    }
+
 	/**
 	 * @return array relational rules.
 	 */
@@ -55,6 +65,9 @@ class ContactQuestion extends ActiveRecord {
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+            'question' => array(self::BELONGS_TO,'Question','question_id'),
+            'option' => array(self::BELONGS_TO,'Option','option_id'),
+            'contact' => array(self::BELONGS_TO,'Contact','contact_id'),
 		);
 	}
 
@@ -88,5 +101,15 @@ class ContactQuestion extends ActiveRecord {
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
-	}	
+	}
+
+    public function __toString(){
+        if($this->option !== null)
+        return $this->option->value;
+        return "$this->option_id";
+    }
+
+    public function __toInt(){
+        return CPropertyValue::ensureInteger($this->option_id);
+    }
 }

@@ -14,7 +14,7 @@ return array(
     'sourceLanguage' => '00',
     'preload' => array('log', 'bootstrap', 'wizard'),
    'onBeginRequest' => array('ApplicationInitializer', 'publish'),
-    'defaultController' => 'test/index',
+    'defaultController' => 'enquete/index',
 
     // autoloading model and component classes
     'import' => array(

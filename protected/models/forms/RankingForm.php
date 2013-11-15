@@ -11,7 +11,7 @@ class RankingForm extends CFormModel
 {
 
 
-    public $ranking;
+    public $ranking = array();
 
 
 
@@ -23,28 +23,16 @@ class RankingForm extends CFormModel
     }
 
 
-    public function getScale()
-    {
-        return array(
-            1 => 1,
-            2 => 2,
-            3 => 3,
-            4 => 4,
-            5 => 5,
-        );
-    }
 
     public function attributeLabels() {
         return array(
-            'test' => 'Weinig',
+            'ranking' => 'Weinig',
         );
     }
 
-    public function getQuestion(){
-        return Question::model()->findByPk(1);
-    }
 
-    public function getQuestion2(){
-        return Question::model()->findByPk(2);
-    }
+	public function attributeNames(){
+		return array('ranking');
+	}
+
 }

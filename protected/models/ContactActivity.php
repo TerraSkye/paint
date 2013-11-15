@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'contact_activity':
  * @property integer $contact_id
  * @property integer $activity_id
+ * @property integer $amount
  * @property string $create_date
  */
 class ContactActivity extends ActiveRecord {
@@ -40,12 +41,24 @@ class ContactActivity extends ActiveRecord {
 		// will receive user inputs.
 		return array(
 			array('contact_id, activity_id, create_date', 'required'),
+			array('amount', 'safe'),
 			array('contact_id, activity_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('contact_id, activity_id, create_date', 'safe', 'on'=>'search'),
 		);
 	}
+
+
+		public function behaviors()
+			{
+				return array_merge(parent::behaviors(), array(
+					'DuplicateRecordResolver' => array(
+						'class' => 'application.components.DuplicateRecordResolver',
+						'matchingAttributes' => "contact_id,activity_id",
+					),
+				));
+			}
 
 	/**
 	 * @return array relational rules.
@@ -64,6 +77,7 @@ class ContactActivity extends ActiveRecord {
 		return array(
 			'contact_id' => 'Contact',
 			'activity_id' => 'Activity',
+			'amount' => 'Aantal x',
 			'create_date' => 'Create Date',
 		);
 	}
@@ -79,6 +93,7 @@ class ContactActivity extends ActiveRecord {
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('contact_id',$this->contact_id);
+		$criteria->compare('amount',$this->amount);
 		$criteria->compare('activity_id',$this->activity_id);
 		$criteria->compare('create_date',$this->create_date,true);
 
