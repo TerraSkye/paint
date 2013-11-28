@@ -55,7 +55,9 @@
 					'action' => $this->createUrl($action->id),
 				)); ?>
 
-				<h5>Top 5</h5>
+                <div class="section-header">
+                    Top 5
+                </div>
 
 				<div class="sort-container ui-corner-all ui-sortable" style="min-height:600px;background: #cccccc;">
                     <?php foreach($model->ranking as $paint => $o):?>

@@ -1302,9 +1302,9 @@ EOD;
 		self::resolveNameID($model,$attribute,$htmlOptions);
 		if(!isset($htmlOptions['value']))
 			$htmlOptions['value']=1;
-		if(!isset($htmlOptions['checked']) &&
-            (is_object($resolved =self::resolveValue($model,$attribute)) ? $resolved->__toInt() : $resolved)
-            == $htmlOptions['value'])
+
+        $resolved = self::resolveValue($model,$attribute);
+		if(!isset($htmlOptions['checked']) &&  ((is_object($resolved) ? $resolved->__toInt() : $resolved)  == $htmlOptions['value']))
 			$htmlOptions['checked']='checked';
 		self::clientChange('click',$htmlOptions);
 

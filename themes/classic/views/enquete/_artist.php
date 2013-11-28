@@ -51,12 +51,13 @@
                         </th>
                         <?php for ($i = 1; $i < 7; $i++): ?>
                             <td class="span1">
-                                <?php echo $form->radioButton($model, "artist[$artist->primaryKey]", array('value' => $i , 'uncheckValue' => false)) ?>
+                                <?php //XHtml::d($i,$model->artist[$artist->PrimaryKey])?>
+                                <?php echo $form->radioButton($model, "artist[$artist->primaryKey]", array('value' => "$i" , 'uncheckValue' => null)) ?>
 
                             </td>
                         <?php endfor; ?>
                         <td class="span2" style="text-align: center">
-                            <?php echo $form->radioButton($model, "artist[$artist->primaryKey]", array('value' => -1,'uncheckValue' => -1)) ?>
+                            <?php echo $form->radioButton($model, "artist[$artist->primaryKey]", array('value' => -1,'uncheckValue' => null)) ?>
                         </td>
                     </tr>
 
@@ -86,12 +87,12 @@
                         </th>
                         <?php for ($i = 1; $i < 7; $i++): ?>
                             <td class="span1">
-                                <?php echo $form->radioButton($model, "artist[$artist->primaryKey]", array('value' => $i,'uncheckValue' => false)) ?>
+                                <?php echo $form->radioButton($model, "artist[$artist->primaryKey]", array('value' => $i,'uncheckValue' => null)) ?>
 
                             </td>
                         <?php endfor; ?>
                         <td class="span2" style="text-align: center">
-                            <?php echo $form->radioButton($model, "artist[$artist->primaryKey]", array('value' => -1,'uncheckValue' => -1)) ?>
+                            <?php echo $form->radioButton($model, "artist[$artist->primaryKey]", array('value' => -1,'uncheckValue' => null)) ?>
                         </td>
                     </tr>
 

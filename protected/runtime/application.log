@@ -3407,3 +3407,40 @@ HTTP_REFERER=http://localhost/paint/enquete/artist
 2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
 2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
 2013/11/15 13:46:47 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/28 09:04:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#3 {main}
+REQUEST_URI=/paint/images/favicon.ico
+---
+2013/11/28 10:28:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController('images/favicon....')
+#1 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\paint\index.php(48): CApplication->run()
+#3 {main}
+REQUEST_URI=/paint/images/favicon.ico
+---
+2013/11/28 10:29:07 [error] [php] Undefined offset: 1 (C:\xampp\htdocs\paint\themes\classic\views\enquete\_artist.php:54)
+Stack trace:
+#0 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(870): EnqueteController->renderFile()
+#1 C:\xampp\htdocs\paint\protected\components\CommonController.php(29): EnqueteController->renderPartial()
+#2 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(208): EnqueteController->renderPartial()
+#3 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(783): EnqueteController->renderPartial()
+#4 C:\xampp\htdocs\paint\protected\components\CommonController.php(38): EnqueteController->render()
+#5 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(203): EnqueteController->render()
+#6 C:\xampp\htdocs\paint\protected\extensions\wizard\actions\CWizardModelAction.php(72): EnqueteController->render()
+#7 C:\xampp\htdocs\paint\protected\extensions\wizard\components\CWizardController.php(63): CWizardModelAction->run()
+#8 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(287): EnqueteController->runAction()
+#9 C:\xampp\htdocs\paint\protected\lib\yii\web\CController.php(266): EnqueteController->runActionWithFilters()
+#10 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(276): EnqueteController->run()
+#11 C:\xampp\htdocs\paint\protected\lib\yii\web\CWebApplication.php(135): CWebApplication->runController()
+#12 C:\xampp\htdocs\paint\protected\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\paint\index.php(48): CWebApplication->run()
+REQUEST_URI=/paint/enquete/activity
+2013/11/28 10:40:50 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/28 10:40:50 [warning] [application] Failed to set unsafe attribute "create_date" of "ContactActivity".
+2013/11/28 10:40:50 [warning] [application] Failed to set unsafe attribute "question_id" of "ContactActivity".
+2013/11/28 10:40:50 [warning] [application] Failed to set unsafe attribute "create_date" of "ContactActivity".
